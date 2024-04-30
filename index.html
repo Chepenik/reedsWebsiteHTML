@@ -39,19 +39,8 @@
       color: #6b46c1;
     }
 
-    .navbar-nav .sign-up {
-      background-color: #FF9900;
-      color: azure;
-      border-radius: 20px;
-      transition: background-color 0.3s;
-    }
-
-    .navbar-nav .sign-up:hover {
-      background-color: #6b46c1;
-    }
-
     .header-content {
-      padding: 150px 20px 50px;
+      padding: 50px;
       box-sizing: border-box;
     }
 
@@ -170,6 +159,47 @@
     .fa {
       font-family: 'FontAwesome', sans-serif;
     }
+
+    .title:hover {
+      color: #6b46c1;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 20px; /* Reduced padding for smaller screens */
+      }
+
+      .header-content h1 {
+        font-size: 28px; /* Smaller font size for headers */
+      }
+
+      .header-content p {
+        font-size: 16px; /* Smaller font size for paragraphs */
+      }
+
+      .contact-form {
+        padding: 20px;
+        max-width: 80%; /* Full width on smaller screens */
+      }
+
+      .btn, .btn-primary {
+        padding: 10px 15px; /* Smaller buttons */
+        font-size: 14px; /* Smaller font size for buttons */
+      }
+
+      .navbar-brand img {
+        height: 50px; /* Smaller logo */
+      }
+
+      .background-image {
+        max-width: 80%; /* Responsive image width */
+      }
+
+      iframe {
+        width: auto; /* Full-width video embeds */
+        height: 100%; /* Adjustable height */
+      }
+    }
   </style>
 </head>
 <body>
@@ -179,18 +209,20 @@
         <img src="https://i.nostr.build/BRo4e.png" alt="Bitcoin Classroom Logo">
       </a>
       <div class="navbar-nav">
-        <a href="#">About</a>
-        <a href="#">Classes</a>
-        <a href="#">Donate</a>
-        <a href="signup.html" class="sign-up">Sign Up</a>
+        <a href="about.html">About</a>
+        <a href="https://www.youtube.com/@BitcoinClassroom">Youtube</a>
+        <a href="https://btcpay0.voltageapp.io/apps/2Uqo4fPb4mVizHKzrdPqzZ75hp3j/pos">Sign-up</a>
       </div>
     </nav>
     <div class="header-content">
-      <h1>Welcome to Reed's Western Mass Multisig Bitcoin Course!</h1>
+      <h1 class="title">Welcome to Reed's Western Mass Multisig Bitcoin Course!</h1>
       <p>Master the art of Bitcoin multisig wallets for enhanced security.</p>
       <img src="https://i.nostr.build/8GgzB.jpg" alt="Bitcoin Course Background" class="background-image">
       <br>
-      <a href="signup.html" class="btn btn-primary">Sign Up for a Class!</a>
+      <a href="https://btcpay0.voltageapp.io/apps/2Uqo4fPb4mVizHKzrdPqzZ75hp3j/pos" class="btn btn-primary">Sign Up for a Class!</a>
+      <br>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_z3_l_I06Fs?si=31JDwZvo1kWykbhF"  className="rounded-lg bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 focus:outline-none transition duration-150 ease-in-out" ></iframe>
     </div>
   </header>
 
